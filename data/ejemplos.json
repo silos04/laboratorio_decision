@@ -1,0 +1,46 @@
+[
+  {
+    "id": "admision",
+    "nombre": "1. Admisión y becas universitarias",
+    "descripcion": "Despliegue de asistente IA para prevalidar solicitudes académicas.",
+    "contexto": "La universidad recibe miles de solicitudes y el equipo actual no da abasto para procesarlas a tiempo.",
+    "decision": "¿Conviene desplegar un asistente con IA para prevalidar solicitudes y resumir expedientes sin perder equidad ni trazabilidad?",
+    "datos": "Volumen: 15,000 solicitudes/año. Expedientes incompletos: 35%. Plazo máximo: 30 días.",
+    "restricciones": "Sensibilidad del dato alta (datos personales/financieros).",
+    "metricas": "Necesidad estricta de revisión humana para denegaciones.",
+    "advertencia": "Riesgo crítico de sesgo algorítmico en la asignación de becas."
+  },
+  {
+    "id": "tickets",
+    "nombre": "2. Tickets internos de soporte TI",
+    "descripcion": "Automatización de clasificación y escalado de incidencias.",
+    "contexto": "El equipo de soporte (Help Desk) pierde demasiado tiempo clasificando tickets repetitivos, retrasando la atención de incidentes críticos.",
+    "decision": "¿Es viable automatizar la clasificación y el escalado inicial de tickets internos?",
+    "datos": "5,000 tickets/mes. 40% son repetidos (reseteo de passwords, etc.).",
+    "restricciones": "SLA objetivo: Primera respuesta < 1 hora. Resolución crítica < 4 horas.",
+    "metricas": "Tiempo medio de primera respuesta actual: 4 horas.",
+    "advertencia": "La IA no debe auto-resolver incidentes de seguridad o caídas de servidores."
+  },
+  {
+    "id": "ecommerce",
+    "nombre": "3. Devoluciones y fraude en e-commerce",
+    "descripcion": "Equilibrio entre automatizar devoluciones y controlar el fraude.",
+    "contexto": "Un e-commerce quiere acelerar los reembolsos a clientes para mejorar UX, pero detecta un aumento en devoluciones fraudulentas.",
+    "decision": "¿Debe el negocio automatizar devoluciones estándar y reservar revisión humana solo para posibles fraudes y excepciones?",
+    "datos": "10,000 devoluciones/mes. Fraude estimado: 4%. Valor medio pedido: 85€.",
+    "restricciones": "Pedidos > 200€ requieren siempre revisión manual humana.",
+    "metricas": "Tiempo medio de resolución actual: 5 días.",
+    "advertencia": "Riesgo de pérdida económica por Falsos Negativos (dejar pasar un fraude)."
+  },
+  {
+    "id": "asistente",
+    "nombre": "4. Asistente interno de documentación corporativa",
+    "descripcion": "Buscador corporativo para consultar políticas internas.",
+    "contexto": "Se requiere un chatbot interno para que los empleados consulten normativas y protocolos corporativos.",
+    "decision": "¿Qué arquitectura y política de uso convienen para este asistente sin disparar costes de inferencia ni riesgos de privacidad?",
+    "datos": "4,000 usuarios activos. Presupuesto mensual máximo: 22,000€.",
+    "restricciones": "Latencia máxima tolerable: 3 segundos. Alta confidencialidad documental.",
+    "metricas": "Frecuencia: 12 consultas/semana por usuario.",
+    "advertencia": "Riesgo de fuga de información si se envía contexto sensible a una API pública."
+  }
+]
