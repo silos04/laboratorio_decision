@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Pilot IA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Decision Pilot IA</h1>
+        <p>Estructura decisiones complejas y genera prompts robustos para obtener recomendaciones razonadas de la IA.</p>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <label for="selector-caso">Selecciona un caso de uso:</label>
+            <select id="selector-caso">
+                <option value="">-- Elige un caso --</option>
+            </select>
+
+            <label for="contexto">Contexto Inicial:</label>
+            <textarea id="contexto" rows="3" placeholder="Describe la situación..."></textarea>
+
+            <label for="decision">Decisión a Tomar:</label>
+            <textarea id="decision" rows="2" placeholder="¿Qué se debe decidir?"></textarea>
+
+            <label for="datos">Datos Disponibles / Métricas:</label>
+            <textarea id="datos" rows="2" placeholder="Volumen, SLAs, presupuesto, etc."></textarea>
+
+            <label for="restricciones">Restricciones y Riesgos:</label>
+            <textarea id="restricciones" rows="2" placeholder="Límites legales, presupuestarios o éticos..."></textarea>
+
+            <div class="botones">
+                <button id="btn-generar">Generar Prompt</button>
+                <button id="btn-copiar" disabled>Copiar al Portapapeles</button>
+            </div>
+        </section>
+
+        <section class="resultado">
+            <h2>Prompt Generado:</h2>
+            <div id="salida-prompt" class="caja-salida">El prompt aparecerá aquí...</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto desarrollado para Laboratorio de Decisiones con IA | <a href="#" target="_blank">Ver Repositorio en GitHub</a></p>
+    </footer>
+
+    <script src="prompts.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
